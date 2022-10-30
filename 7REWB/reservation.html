@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="cs">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>U Richarda</title>
+    <link rel="icon" href="./assets/beer.svg" type="image/gif" sizes="16x16">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <link href="./bootstrap/css/bootstrap.css" rel="stylesheet">
+    <link href="./css/main.css" rel="stylesheet"> 
+    <link href="./css/reservation.css" rel="stylesheet"> 
+  </head>
+
+  <body>
+    <!-- Navbar -->
+    <header>
+      <nav class="navbar navbar-expand-lg bg-dark navbar-dark p-2">
+        <div class="container">
+          <a href="index.html" class="navbar-brand d-flex align-items-center">
+            <img
+            src="./assets/beer.svg"
+            alt="BeerLogo" width="40" height="40"
+          ><span class="ps-3 fw-light">U Richarda</span></a>
+
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMenu" aria-controls="navbarMenu" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>    
+
+          <div class="collapse navbar-collapse" id="navbarMenu">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a href="index.html" class="nav-link">Úvod</a>
+            </li>
+            <li class="nav-item">
+              <a href="news.html" class="nav-link">Aktuality</a>
+            </li>
+            <li class="nav-item">
+              <a href="foodMenu.html" class="nav-link">Jídelníček</a>
+            </li>
+            <li class="nav-item">
+              <a href="reservation.html" class="nav-link">Rezervace</a>
+            </li>
+            <li class="nav-item">
+              <a href="about.html" class="nav-link">O nás</a>
+            </li>
+          </ul>
+          </div>
+      
+        </div>
+      </nav>
+    </header>
+
+  <main>
+    <div class="container my-3">
+
+       <!-- Breadcrumb -->
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="index.html">Úvod</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Rezervace</li>
+        </ol>
+      </nav>
+
+      <div class="row">
+        <div class="col">
+          <h2 class="text-center mb-3">Rezervace</h2>
+        </div>
+      </div>
+      
+      <form class="row g-3 needs-validation was-validated" novalidate="">
+
+            <div class="col-lg-6">
+              <h4 class="text-center mb-3">Nejprve něco o Vás...</h4>
+              <hr>
+              <label for="validationCustom01" class="form-label">Křestní jméno</label>
+              <input type="text" class="form-control" id="validationCustom01" value="" required="" placeholder="Richard">
+              <div class="invalid-feedback">
+                Zadejte Vaše jméno!
+              </div>
+
+              <label for="validationCustom02" class="form-label">Příjmení</label>
+              <input type="text" class="form-control" id="validationCustom02" value="" required="" placeholder="Oranžový">
+              <div class="invalid-feedback">
+                Zadejte Vaše příjmení!
+              </div>   
+            
+              <label for="validationCustom03" class="form-label">Město</label>
+              <input type="text" class="form-control" id="validationCustom03" required="" placeholder="Ostrava">
+              <div class="invalid-feedback">
+                Zadejte Vaše město!
+              </div>
+            
+              <label for="validationCustom04" class="form-label">Kraj</label>
+              <select class="form-select" id="validationCustom04" required="">
+                <option selected="" disabled="" value="">Vyberte...</option>
+                <option>Hlavní město Praha</option>
+                <option>Jihočeský kraj</option>
+                <option>Jihomoravský kraj</option>
+                <option>Karlovarský kraj</option>
+                <option>Královehradecký kraj</option>
+                <option>Liberecký kraj</option>
+                <option>Moravskoslezský kraj</option>
+                <option>Olomoucký kraj</option>
+                <option>Pardubický kraj</option>
+                <option>Plzeňský kraj</option>
+                <option>Středočeský kraj</option>
+                <option>Ústecký kraj</option>
+                <option>Zlínský kraj</option>
+                <option>Vysočina</option>
+              </select>
+              <div class="invalid-feedback">
+                Vyberte Váš kraj!
+              </div>
+         
+           
+              <label for="validationCustom05" class="form-label">PSČ</label>
+              <input type="text" class="form-control" id="validationCustom05" required="" placeholder="74125">
+              <div class="invalid-feedback">
+                Zadejte Vaše PSČ!
+              </div>  
+              
+            </div>
+  
+            <div class="col-lg-6">
+              <h4 class="text-center mb-3">A teď o rezervaci...</h4>
+              <hr>
+              <h6 class="text-start mb-3 pt-2">Účel rezervace</h6>
+
+              <div class="form-check mb-3">
+                <input type="radio" class="form-check-input" id="validationFormCheck06" name="radio-stacked" required>
+                <label class="form-check-label" for="validationFormCheck06">Rezervace stolu</label>
+              </div>
+              <div class="form-check mb-3">
+                <input type="radio" class="form-check-input" id="validationFormCheck07" name="radio-stacked" required>
+                <label class="form-check-label" for="validationFormCheck07">Rezervace místnosti</label>
+              </div>
+              <div class="form-check mb-3">
+                <input type="radio" class="form-check-input" id="validationFormCheck08" name="radio-stacked" required>
+                <label class="form-check-label" for="validationFormCheck08">Objednávka rautu</label>
+                <div class="invalid-feedback">Vyberte službu!</div>
+              </div>            
+                
+              <label for="validationCustom09" class="form-label">Počet lidí</label>
+              <input type="number" min="1" class="form-control" id="validationCustom09" value="" required="" >
+              <div class="invalid-feedback">
+                Vyberte počet osob!
+              </div>   
+
+              <label for="validationTextarea" class="form-label">Poznámka</label>
+              <textarea class="form-control" id="validationTextarea" rows="5" placeholder="Něco co byste nám chtěli sdělit?"></textarea>       
+            </div>
+
+            <div class="col-12">
+              <h4 class="text-center mb-3">Ještě nám povězte jak Vás kontaktujeme...</h4>
+              <hr>
+              <label for="validationCustom10" class="form-label">Email</label>
+              <div class="input-group mb-3"> 
+                <input type="text" class="form-control" id="validationCustom10" required="" placeholder="Richard98" aria-label="Username">
+                <span class="input-group-text">@</span>
+                <input type="text" class="form-control" id="validationCustom11" required=""  placeholder="seznam.cz" aria-label="Address"> 
+                <div class="invalid-feedback">
+                  Zadejte Váš email!
+                </div>
+              </div>
+
+
+              <label for="validationCustom100" class="form-label">Telefon</label>
+              <input type="text" class="form-control" id="validationCustom100" value="" required="" placeholder="789456123">
+              <div class="invalid-feedback">
+                Zadejte Váš telefon!
+              </div> 
+            </div>
+
+            <div class="col-12"> 
+              <h4 class="text-center mb-3">Posledních pár podmínek...</h4>
+              <hr>
+              <div class="d-flex justify-content-between">
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required="">
+                  <label class="form-check-label" for="invalidCheck">
+                    Souhlasím s podmínkami
+                  </label>
+                  <div class="invalid-feedback">
+                    Musíte souhlasit s podmínkami!
+                  </div>
+                </div>
+              
+                <button class="btn btn-warning shadow" type="submit">Hotovo</button>
+              </div>
+            </div>
+
+      </form>
+          
+    </div>
+  </main>
+    
+  <footer class="bg-secondary">
+    <div class="container container border-top border-dark">
+      <div class="row">
+        <!--Restaurant description-->
+        <div class="col-lg-4 d-flex justify-content-center align-items-baseline text-white my-4">
+
+          <div class="d-flex justify-content-center flex-column w-100">
+              <div class="d-flex align-items-center">
+                <img
+                src="./assets/beer.svg"
+                alt="BeerLogoFooter" width="40" height="40"
+              ><span class="fw-bold ps-3">U Richarda</span>
+            </div> 
+            <hr>
+            <em class="fw-light mt-2">Naše hospůdka Vám poskytne příjmené prostředí a skvělou atmosféru, kde se můžete pořádně nadlábnout!</em>
+            <em class="fw-light mt-2">Kromě jídla poskytujeme i další služby např. rauty!</em>
+          </div>
+
+        </div>
+
+        <!--Contact-->
+        <div class="col-lg-4 d-flex justify-content-center align-items-baseline text-white my-4">
+
+          <div class="d-flex justify-content-center flex-column w-100">
+            <div class="d-flex align-items-center">
+                <img
+                src="./assets/telephone.svg"
+                alt="TelephoneFooter" width="40" height="40"
+              ><span class="fw-bold ps-3">Kontakt</span>
+            </div> 
+            <hr>
+            <em class="fw-light mt-2">Richard@seznam.cz</em>
+            <em class="fw-light mt-2">+420 789 456 123</em>
+            <em class="fw-light mt-2">Hukvaldy, Rychaltice 32, 739 46, CZ</em>
+          </div>
+
+        </div>
+        
+        <!--Newsletter-->
+        <div class="col-lg-4 d-flex justify-content-center align-items-baseline text-white my-4">
+          <div class="d-flex justify-content-center flex-column w-100">
+            <div class="d-flex align-items-center">
+              <img
+              src="./assets/message.svg"
+              alt="MessageFooter" width="40" height="40"
+            ><span class="fw-bold ps-3">Newsletter</span>
+          </div> 
+          <hr>
+
+            <form class="d-flex justify-content-center mt-2">
+                <input placeholder="Zadejte Váš email..." type="email" class="form-control" id="emailInputNewsletter">            
+                <button type="submit" class="btn btn-primary ms-1">Odebírat</button>
+            </form>
+      
+         </div>
+        </div>
+      </div>
+      
+      <!--Socials-->
+      <div class="row">
+       
+        <div class="col d-flex justify-content-center my-4">
+          <div class="btn-group shadow bg-gradient" role="group" aria-label="Basic example">
+            <a class="btn border border-dark" href="https://twitter.com/">
+              <i class="bi bi-twitter"></i>
+            </a>
+            <a class="btn border border-dark" href="https://www.facebook.com/"> 
+              <i class="bi bi-facebook"></i>
+            </a>
+            <a class="btn border border-dark" href="https://www.instagram.com/">
+              <i class="bi bi-instagram"></i>
+            </a>    
+          </div>
+        </div>
+      </div>  
+    </div>
+  </footer>  
+        
+  <script src="./bootstrap/js/bootstrap.bundle.min.js"></script> 
+</body>
+</html>            
+    

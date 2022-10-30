@@ -1,0 +1,12 @@
+.cardLink{
+    cursor: pointer;
+    transition: all .2s ease-in-out;
+}
+.cardLink:hover{
+    color: rgb(226, 148, 4);
+}
+.modalImg{
+    max-height: 30vh;
+    width: 100%;
+    object-fit: cover;
+}

@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="cs">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>U Richarda</title>
+    <link rel="icon" href="./assets/beer.svg" type="image/gif" sizes="16x16">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <link href="./bootstrap/css/bootstrap.css" rel="stylesheet"> 
+    <link href="./css/news.css" rel="stylesheet"> 
+    <link href="./css/main.css" rel="stylesheet">   
+  </head>
+
+  <body>
+    <!-- Navbar -->
+    <header>
+      <nav class="navbar navbar-expand-lg bg-dark navbar-dark p-2">
+        <div class="container">
+          <a href="index.html" class="navbar-brand d-flex align-items-center">
+            <img
+            src="./assets/beer.svg"
+            alt="BeerLogo" width="40" height="40"
+          ><span class="ps-3 fw-light">U Richarda</span></a>
+
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMenu" aria-controls="navbarMenu" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>    
+
+          <div class="collapse navbar-collapse" id="navbarMenu">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a href="index.html" class="nav-link">Úvod</a>
+            </li>
+            <li class="nav-item">
+              <a href="news.html" class="nav-link">Aktuality</a>
+            </li>
+            <li class="nav-item">
+              <a href="foodMenu.html" class="nav-link">Jídelníček</a>
+            </li>
+            <li class="nav-item">
+              <a href="reservation.html" class="nav-link">Rezervace</a>
+            </li>
+            <li class="nav-item">
+              <a href="about.html" class="nav-link">O nás</a>
+            </li>
+          </ul>
+          </div>
+      
+        </div>
+      </nav>
+    </header>
+
+  <main>
+
+    <div class="container mt-3">
+
+        <!-- Breadcrumb -->
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item"><a href="index.html">Úvod</a></li>
+              <li class="breadcrumb-item active" aria-current="page">Aktuality</li>
+            </ol>
+        </nav>
+ 
+        <!-- Title -->
+        <div class="row mb-3">
+          <h2 class="text-center">Novinky od Richarda</h2>       
+        </div>
+        
+        <!-- Cards -->
+        <div class="row">
+            <div class="col-md-6 col-lg-4">
+              <div class="card mb-3 shadow cardLink" data-bs-toggle="modal" data-bs-target="#newsModal">
+                <img src="https://images.unsplash.com/photo-1586339949916-3e9457bef6d3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=80" class="card-img-top" alt="news">
+                <div class="card-body">
+                  <h5 class="card-title">Výsledky soutěže ŠIPKY!</h5>
+                  <p class="card-text text-end"><small class="text-muted">7.12.2022</small></p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4">
+              <div class="card mb-3 shadow cardLink" data-bs-toggle="modal" data-bs-target="#newsModal">
+                <img src="https://images.unsplash.com/photo-1586335925743-24030cedfd5a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8cmVjb25zdHJ1Y3Rpb258ZW58MHx8MHx8&auto=format&fit=crop&w=600&q=60" class="card-img-top" alt="reconstruction">
+                <div class="card-body">
+                  <h5 class="card-title">Rekonstrukce se bliží!</h5>
+                  <p class="card-text text-end"><small class="text-muted">5.12.2022</small></p>
+                </div>
+              </div>    
+            </div>
+
+            <div class="col-md-12 col-lg-4">
+              <div class="card mb-3 shadow cardLink" data-bs-toggle="modal" data-bs-target="#newsModal">
+                <img src="https://images.unsplash.com/photo-1585776245991-cf89dd7fc73a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=80" class="card-img-top" alt="update">
+                <div class="card-body">
+                  <h5 class="card-title">Možnost Cateringu!</h5>
+                  <p class="card-text text-end"><small class="text-muted">1.12.2022</small></p>
+                </div>
+              </div>
+            </div>
+        </div>
+
+        <!-- Cards -->
+        <div class="row">
+            <div class="col-md-6 col-lg-4 ">
+              <div class="card mb-3 shadow cardLink" data-bs-toggle="modal" data-bs-target="#newsModal">
+                <img src="https://images.unsplash.com/photo-1551782450-17144efb9c50?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=80" class="card-img-top" alt="newProductJack">
+                <div class="card-body">
+                  <h5 class="card-title">Novinka #JACK</h5>
+                  <p class="card-text text-end"><small class="text-muted">25.11.2022</small></p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4">
+              <div class="card mb-3 shadow cardLink" data-bs-toggle="modal" data-bs-target="#newsModal">
+                <img src="https://images.unsplash.com/photo-1586339949916-3e9457bef6d3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=80" class="card-img-top" alt="newsContest">
+                <div class="card-body">
+                  <h5 class="card-title">Soutěž v šipkách!</h5>
+                  <p class="card-text text-end"><small class="text-muted">21.11.2022</small></p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-12 col-lg-4">
+              <div class="card mb-3 shadow cardLink" data-bs-toggle="modal" data-bs-target="#newsModal">
+                <img src="https://images.unsplash.com/photo-1551782450-a2132b4ba21d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1169&q=80" class="card-img-top" alt="newProductKarel">
+                <div class="card-body">
+                  <h5 class="card-title">Novinka #KAREL</h5>
+                  <p class="card-text text-end"><small class="text-muted">18.11.2022</small></p>
+                </div>
+              </div>
+            </div>
+        </div>
+
+        <!-- Cards -->
+        <div class="row">
+            <div class="col-md-6 col-lg-4">
+              <div class="card mb-3 shadow cardLink" data-bs-toggle="modal" data-bs-target="#newsModal">
+                <img src="https://images.unsplash.com/photo-1585776245991-cf89dd7fc73a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=80" class="card-img-top" alt="updateCatering">
+                <div class="card-body">
+                  <h5 class="card-title">Nově RAUTY!</h5>
+                  <p class="card-text text-end"><small class="text-muted">15.11.2022</small></p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4">
+              <div class="card mb-3 shadow cardLink" data-bs-toggle="modal" data-bs-target="#newsModal">
+                <img src="https://images.unsplash.com/photo-1603841537691-ce36284f2fec?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8Y2xvc2luZ3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=80" class="card-img-top" alt="closing">
+                <div class="card-body">
+                  <h5 class="card-title">Ná pár dní zavíráme!</h5>
+                  <p class="card-text text-end"><small class="text-muted">10.11.2022</small></p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-12 col-lg-4">
+              <div class="card mb-3 shadow cardLink" data-bs-toggle="modal" data-bs-target="#newsModal">
+                <img src="https://images.unsplash.com/photo-1593238404535-cda7ae2fe50b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=80" class="card-img-top" alt="opening">
+                <div class="card-body">
+                  <h5 class="card-title">OTVÍRÁME!</h5>
+                  <p class="card-text text-end"><small class="text-muted">1.11.2022</small></p>
+                </div>
+              </div>
+            </div>
+        </div>
+
+        <!-- Pagination -->
+        <div class="row">
+            <div class="col d-flex justify-content-center align-items-center mt-2">
+                <nav aria-label="Page navigation">
+                    <ul class="pagination">
+                      <li class="page-item disabled">
+                        <a class="page-link" href="#" tabindex="-1">Předchozí</a>
+                      </li>
+                      <li class="page-item active" aria-current="page">
+                        <a class="page-link" href="#">1</a>
+                      </li>
+                      <li class="page-item disabled">
+                        <a class="page-link" href="#">Další</a>
+                      </li>
+                    </ul>
+                  </nav>
+            </div>
+        </div>
+    </div>
+  
+    <!-- Modal -->
+    <div class="modal fade" id="newsModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-scrollable modal-lg modal-fullscreen-md-down">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-4" id="exampleModalLabel">Výsledky soutěže ŠIPKY!</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body p-0 m-0">
+            <img src="https://images.unsplash.com/photo-1589959864690-24091a905ea1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1161&q=80" 
+              class="modalImg shadow" alt="newsImg"> 
+            <div class="container fw-light fs-5">
+
+              <div class="row my-2">
+                <div class="col-lg-6">
+                  <span class="text-decoration-underline">Vážení návštěvníci!</span>
+                </div>
+                <div class="col-lg-6 d-flex justify-content-end fst-italic">
+                  <span class="text-muted">1.11.2022</span>
+                </div>  
+              </div>
+
+              <div class="row fs-6">
+                <p>dne 21.11.2022 proběhl u nás velkolepý turnaj v šipkách! Celý turnaj trval celkem 2 hodiny, kdy se turnaje zúčastnilo celkém 5 soutěžících.</p>
+                <p>První 3 soutěžící s největším skórem si odnesou následující odměny: </p>
+                <ul class="ps-5">
+                  <li>Oběd zdarma!</li>
+                  <li>Náš poukaz v hodnotě 500 Kč</li>
+                  <li>Náš poukaz v hodnotě 250 Kč</li>
+                </ul>
+                <p>Detailní informace o výsledcích najdete v tabůlce níže.</p>
+                <table class="table">
+                  <thead>
+                    <tr>
+                      <th scope="col">Pozice</th>
+                      <th scope="col">Jméno</th>
+                      <th scope="col">Skóre</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th scope="row">1</th>
+                      <td>Petr Modrý</td>
+                      <td>50</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">2</th>
+                      <td>Helena Zelená</td>
+                      <td>45</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">3</th>
+                      <td>Jan Červený</td>
+                      <td>38</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">4</th>
+                      <td>Karel Hnědy</td>
+                      <td>32</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">5</th>
+                      <td>Petr Žlutý</td>
+                      <td>28</td>
+                    </tr>
+                  </tbody>
+                </table>
+                <p>Všem zúčastněným blahopřejeme a těšíme se na další turnaj!</p>
+              </div>
+              
+            </div>   
+          </div>
+          <div class="modal-footer d-flex justify-content-between">
+            <small class="text-muted">- Richard Oranžový, majitel</small>
+            <button type="button" class="btn btn-danger shadow" data-bs-dismiss="modal">Zavřít</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </main>
+    
+  <footer class="bg-secondary">
+    <div class="container container border-top border-dark">
+      <div class="row">
+        <!--Restaurant description-->
+        <div class="col-lg-4 d-flex justify-content-center align-items-baseline text-white my-4">
+
+          <div class="d-flex justify-content-center flex-column w-100">
+              <div class="d-flex align-items-center">
+                <img
+                src="./assets/beer.svg"
+                alt="BeerLogoFooter" width="40" height="40"
+              ><span class="fw-bold ps-3">U Richarda</span>
+            </div> 
+            <hr>
+            <em class="fw-light mt-2">Naše hospůdka Vám poskytne příjmené prostředí a skvělou atmosféru, kde se můžete pořádně nadlábnout!</em>
+            <em class="fw-light mt-2">Kromě jídla poskytujeme i další služby např. rauty!</em>
+          </div>
+
+        </div>
+
+        <!--Contact-->
+        <div class="col-lg-4 d-flex justify-content-center align-items-baseline text-white my-4">
+
+          <div class="d-flex justify-content-center flex-column w-100">
+            <div class="d-flex align-items-center">
+                <img
+                src="./assets/telephone.svg"
+                alt="TelephoneFooter" width="40" height="40"
+              ><span class="fw-bold ps-3">Kontakt</span>
+            </div> 
+            <hr>
+            <em class="fw-light mt-2">Richard@seznam.cz</em>
+            <em class="fw-light mt-2">+420 789 456 123</em>
+            <em class="fw-light mt-2">Hukvaldy, Rychaltice 32, 739 46, CZ</em>
+          </div>
+
+        </div>
+        
+        <!--Newsletter-->
+        <div class="col-lg-4 d-flex justify-content-center align-items-baseline text-white my-4">
+          <div class="d-flex justify-content-center flex-column w-100">
+            <div class="d-flex align-items-center">
+              <img
+              src="./assets/message.svg"
+              alt="MessageFooter" width="40" height="40"
+            ><span class="fw-bold ps-3">Newsletter</span>
+          </div> 
+          <hr>
+
+            <form class="d-flex justify-content-center mt-2">
+                <input placeholder="Zadejte Váš email..." type="email" class="form-control" id="emailInputNewsletter">            
+                <button type="submit" class="btn btn-primary ms-1">Odebírat</button>
+            </form>
+      
+         </div>
+        </div>
+      </div>
+      
+      <!--Socials-->
+      <div class="row">
+       
+        <div class="col d-flex justify-content-center my-4">
+          <div class="btn-group shadow bg-gradient" role="group" aria-label="Basic example">
+            <a class="btn border border-dark" href="https://twitter.com/">
+              <i class="bi bi-twitter"></i>
+            </a>
+            <a class="btn border border-dark" href="https://www.facebook.com/"> 
+              <i class="bi bi-facebook"></i>
+            </a>
+            <a class="btn border border-dark" href="https://www.instagram.com/">
+              <i class="bi bi-instagram"></i>
+            </a>    
+          </div>
+        </div>
+      </div>  
+    </div>
+  </footer>  
+        
+  <script src="./bootstrap/js/bootstrap.bundle.min.js"></script> 
+</body>
+</html>            
+    
